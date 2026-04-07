@@ -1,0 +1,141 @@
+/* --- Base Styles & Typography --- */
+body, html {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.95rem;
+  background-color: #f4f6f8;
+  color: #1e293b;
+}
+
+body, html, #root, .App {
+  min-height: 100vh;
+}
+
+.fw-bold {
+  font-weight: 600 !important; /* Slightly softened bold for a modern aesthetic */
+}
+
+/* --- Cards & Modals --- */
+.card, .modal-content {
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+/* --- Buttons --- */
+.btn {
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.6rem 1.25rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08) !important;
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-light {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+}
+
+.btn-light:hover {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+/* --- Form Controls --- */
+.form-control, .form-select {
+  background-color: #f8fafc;
+  border: 1px solid transparent;
+  padding: 0.6rem 0.85rem;
+  border-radius: 0.4rem;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.form-control:hover, .form-select:hover {
+  background-color: #f1f5f9;
+}
+
+/* Modern focus ring */
+.form-control:focus, .form-select:focus {
+  background-color: #ffffff;
+  border-color: #8baffa; 
+  box-shadow: 0 0 0 3px rgba(139, 175, 250, 0.15);
+  outline: none;
+}
+
+.form-control::placeholder {
+  color: #94a3b8;
+}
+
+/* --- Input Groups --- */
+.input-group-text {
+  border-radius: 0.4rem;
+}
+
+/* --- Tables --- */
+.table th {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+  border-top: none;
+  border-bottom: 2px solid #e2e8f0 !important;
+}
+
+.table td {
+  vertical-align: middle;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.table tr th:first-child,
+.table tr td:first-child {
+  padding-left: 0;
+}
+
+.table tr th:last-child,
+.table tr td:last-child {
+  padding-right: 0;
+}
+
+/* --- Utilities --- */
+hr {
+  opacity: 0.15;
+  border-color: #64748b;
+}
+
+/* --- PDF Capture Area --- */
+#invoiceCapture {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: white; /* Ensures PDFs render with a crisp white background */
+}
+
+/* --- Premium Custom Scrollbar --- */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1; 
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8; 
+}
